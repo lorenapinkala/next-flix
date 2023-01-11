@@ -4,10 +4,10 @@ import axios from 'axios'
 import YouTube from 'react-youtube';
 
 function App() {
-  const API_URL='https://api.themoviedb.org/3'
-  const API_KEY='b1a1a4ed6dc10a521e384116877a53bd'
-  const IMAGE_PATH='https://image.tmdb.org/t/p/original'
-  const URL_IMAGE='https://image.tmdb.org/t/p/original'
+  const API_URL=import.meta.env.VITE_API_URL
+  const API_KEY=import.meta.env.VITE_API_KEY
+  const IMAGE_PATH=import.meta.env.VITE_IMAGE_PATH
+  const URL_IMAGE=import.meta.env.VITE_URL_IMAGE
 
   const[movies, setMovies]=useState([])
   const [searchKey,setSearchKey]=useState('')
